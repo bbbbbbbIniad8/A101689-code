@@ -8,12 +8,15 @@ def fib(n):
         lst[i % 2] = lst[i % 2] + lst[(i + 1) % 2]
     return lst[i % 2]
 
-result = []
-sum = 0
-n = input("n = ")
+def A101689():
+    result = []
+    sum = 0
+    n = input("n = ")
 
-for i in range(1, int(n) + 1):
-    result.append(fib(i))
-    sum += 1/(math.prod(result))
+    for i in range(1, int(n) + 1):
+        result.append(fib(i))
+        sum += 1/(math.prod(result))
 
-print(sum)
+    print(sum)
+
+A101689()
