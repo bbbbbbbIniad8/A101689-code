@@ -8,11 +8,11 @@ def fib(n):
         lst[i % 2] = lst[i % 2] + lst[(i + 1) % 2]
     return lst[i % 2]
 
-def A101689(index_zero = True):
+def A101689(zero_index = True):
     result = []
     sum = 0
     n = input("n = ")
-    if index_zero == False:
+    if zero_index == False:
         sum += 1
     for i in range(1, int(n) + 1):
         result.append(fib(i))
